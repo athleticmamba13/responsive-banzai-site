@@ -310,10 +310,11 @@ width: 20rem;
     margin-left: 2.5em;
     margin-right: 2.5em; 
   }
+}
 
-  .flex-item {
+  /* .flex-item {
     width: 6em;
-  }
+  } */
 
   .center {
     display: block;
@@ -337,5 +338,5 @@ width: 20rem;
     color: #7E7E7E;
     margin-top: 1em;
     margin-bottom: 0.15em;
-  }
+  
 }
