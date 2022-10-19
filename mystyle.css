@@ -1,0 +1,341 @@
+/* CSS Reset */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+    font-size: 100%;
+    background-color: rgb(244, 244, 244);
+    font-family: 'Montserrat', sans-serif;
+
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  /* body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  } */
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  h3 {
+    font-weight: 1000; 
+  }
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+/* End of reset */
+
+
+/* ---------- Class Selectors ----------- */ 
+
+.main-btn {
+  background-color: #FFBCDC;
+  border: 0.1rem solid black;
+  color: rgb(0, 0, 0);
+  padding: 1%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 2px 2px;
+  border-radius: 10%;
+}
+
+button:hover {
+  background-color:#f4d1e2;
+  transition: 0.3s;
+}
+
+.flex-container {
+    /* We first create a flex layout context */
+    display: flex;
+    
+    /* Then we define the flow direction 
+       and if we allow the items to wrap 
+     * Remember this is the same as:
+     * flex-direction: row;
+     * flex-wrap: wrap;
+     */
+    flex-flow: row wrap;
+    
+    /* Then we define how is distributed the remaining space */
+    justify-content: space-around;
+    
+    padding: 0;
+    margin: 1rem;
+    list-style: none;
+  }
+  
+.flex-item {
+  width: 18em; 
+}
+
+.story-images {
+  max-width: 100%;
+}
+
+.img-desc {
+  font-size: 0.8em;
+}
+
+.img-desc:hover {
+  color:rgb(111, 129, 219)
+}
+
+
+.input-div {
+  padding-top: 2rem;
+  /* padding-left: 5rem;; */
+}
+
+
+/* ---------- ID Selectors ----------- */ 
+
+#home-div {
+  background-image: url("images/home-img.png");
+  background-size: 100%;  
+  margin: auto;
+  text-align: center;
+  padding-top: 15%;
+  padding-bottom: 10%;
+  /* height: 100%;       */
+  background-repeat: no-repeat;
+           /* optional, center the image */
+
+  /* background-color:rgb(244, 237, 218); */
+}
+
+#margin {
+  height: 55px;
+  width: 100%;
+}
+
+#team-img {
+margin-top: 1rem;
+margin-bottom: 2rem;
+}
+
+#twitter-module {
+  width: 100rem; 
+}
+
+#ig-module {
+  width: 150rem;
+}
+
+#logo-img {
+  width: 15%;
+}
+
+
+#order-button {
+margin-bottom: 9%;
+font-size: 1.75rem;
+}
+
+#app-button {
+position: relative;
+bottom: 5px; 
+font-size: 0.8rem;
+}
+
+#copyright {
+text-align: center;
+font-size: 0.7em;
+padding-bottom: 0.1em;
+}
+
+#email-form {
+width: 20rem;
+}
+
+#submit-email-btn {
+  margin-left: 0;
+  background-color: #59f468;
+  border: 0.1rem solid black;
+  text-align: center;
+  border-radius: 3%;
+}
+
+#submit-email-btn:hover {
+  margin-left: 0;
+  margin-bottom: 0; 
+  background-color: #92e29a;
+  border: 0.1rem solid black;
+  text-align: center;
+  border-radius: 3%;
+}
+
+/* ---------- MEDIA QUERIES ----------- */ 
+
+@media screen and (max-width: 500px) {
+  html, body {
+    font-size: 13.9px;
+  }
+  nav {
+    font-size: 16px !important;
+  }
+
+  #logo-img {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+  html, body {
+    font-size: 16px;
+  }
+  #logo-img {
+    width: 27%;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1500px) {
+  html, body {
+    font-size: 20px;
+  }
+  .nav-item {
+    margin-left: 0.2em;
+    margin-right: 0.2em; 
+  }
+
+  #logo-img {
+    width: 15%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #story-3 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  html, body {
+    font-size: 24px;
+  }
+  .nav-item {
+    margin-left: 1em;
+    margin-right: 1em; 
+  }
+
+  #logo-img {
+    width: 15%;
+  }
+}
+
+@media screen and (min-width: 2000px) and (max-width: 2500px) {
+  html, body {
+    font-size: 28px;
+  }
+  .nav-item {
+    margin-left: 1.5em;
+    margin-right: 1.5em; 
+  }
+
+  #logo-img {
+    width: 15%;
+  }
+
+}
+
+@media screen and (min-width: 2500px) and (max-width: 3000px) {
+  html, body {
+    font-size: 32px;
+  }
+  .nav-item {
+    margin-left: 1.9em;
+    margin-right: 1.9em; 
+  }
+
+  #logo-img {
+    width: 15%;
+  }
+}
+
+@media screen and (min-width: 3000px) and (max-width: 3500px) {
+  html, body {
+    font-size: 36px;
+  }
+  .nav-item {
+    margin-left: 2.2em;
+    margin-right: 2.2em; 
+  }
+
+  #logo-img {
+    width: 15%;
+  }
+
+}
+
+@media screen and (min-width: 3500px) {
+  html, body {
+    font-size: 40px;
+  }
+  .nav-item {
+    margin-left: 2.5em;
+    margin-right: 2.5em; 
+  }
+
+  .flex-item {
+    width: 6em;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+  .personas {
+    max-width: 50rem;
+  }
+
+  .navbar {
+    background-color: rgb(232, 232, 232);
+    border-bottom: 2px solid gray;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .img-date {
+    font-size: 0.65em;
+    font-weight: 250;
+    color: #7E7E7E;
+    margin-top: 1em;
+    margin-bottom: 0.15em;
+  }
+}
