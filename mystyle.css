@@ -140,7 +140,7 @@ button:hover {
 }
 
 #margin {
-  height: 55px;
+  height: 50px;
   width: 100%;
 }
 
@@ -179,9 +179,6 @@ font-size: 0.7em;
 padding-bottom: 0.1em;
 }
 
-#email-form {
-width: 20rem;
-}
 
 #submit-email-btn {
   margin-left: 0;
@@ -222,6 +219,9 @@ width: 20rem;
   #logo-img {
     width: 27%;
   }
+  #email-form {
+    width: 14rem !important;
+    }
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1500px) {
@@ -236,6 +236,10 @@ width: 20rem;
   #logo-img {
     width: 15%;
   }
+
+  #email-form {
+    width: 20rem;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -256,6 +260,10 @@ width: 20rem;
   #logo-img {
     width: 15%;
   }
+
+  #email-form {
+    width: 20rem;
+    }
 }
 
 @media screen and (min-width: 2000px) and (max-width: 2500px) {
@@ -285,6 +293,10 @@ width: 20rem;
   #logo-img {
     width: 15%;
   }
+
+  #email-form {
+    width: 20rem;
+    }
 }
 
 @media screen and (min-width: 3000px) and (max-width: 3500px) {
@@ -300,6 +312,10 @@ width: 20rem;
     width: 15%;
   }
 
+  #email-form {
+    width: 20rem;
+    }
+
 }
 
 @media screen and (min-width: 3500px) {
@@ -310,6 +326,10 @@ width: 20rem;
     margin-left: 2.5em;
     margin-right: 2.5em; 
   }
+
+  #email-form {
+    width: 20rem;
+    }
 }
 
   /* .flex-item {
